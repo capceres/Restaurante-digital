@@ -25,15 +25,18 @@ button.navbar-toggler {background-color: #fff; border-radius: 0;}
 .section-button h3 {display: inline-block;padding: 1rem 4rem;background-color: #BD6F26;color: #fff; border: 5px solid transparent;text-transform: uppercase;text-decoration: none;font-weight: 300;letter-spacing: 2px; transition: .3s;}
 .section-button:hover h3 {background-color: #ffeede; color: #212529; border-color: #6F6026; transition: .3s;}
 
+.section-link--bg {position: absolute;top: 0;right: 0;max-height: 20rem;overflow: hidden;opacity: .25; z-index: -1;}
+
 /* section imgs */
 .section-imgs {height: 25rem;overflow: hidden;}
 .section-imgs--img {position: relative;}
-.section-imgs--text {width: 80%;position: absolute;text-align: center;height: 70%;margin: 10%;padding: 2rem;background-color: #ffffffd1;}
+.section-imgs--text {width: 80%;position: absolute;text-align: center;height: 65%;margin: 10%;padding: 2rem;background-color: #ffffffd1;}
 .section-imgs--title {font-size: 1.5rem;}
 .section-imgs--img {max-height: 22rem;}
 
 /* footer */
-
+.footer-inf {background-color: #0A0708; padding: 5rem 0; color: #fff;}
+.footer-inf img {max-width: 30%;}
 
 /* media queries */
 @media screen and (max-width: 992px) {
@@ -42,5 +45,8 @@ button.navbar-toggler {background-color: #fff; border-radius: 0;}
 @media screen and (max-width: 768px) {
     .section-link {min-height: 12rem; padding: 2rem 0;}
     .section-imgs {height: auto;}
+    .section-link--bg {display: none;}
+
+    .footer-inf {padding: 2rem 0;}
     
 }
