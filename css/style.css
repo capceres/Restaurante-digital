@@ -5,24 +5,22 @@
 #header .navbar {background-color: rgb(0,0,0) !important; background: linear-gradient(180deg, rgb(0 0 0 / 80%) 0%, rgba(0,0,0,0) 100%) !important; z-index: 1;}
 #header .navbar-nav {width: 100%; justify-content: flex-end;}
 #header .navbar-brand img {height: 3rem;}
-#header .navbar-light .navbar-nav .nav-link {color: #fff;}
+#header .navbar-light .navbar-nav .nav-link {position: relative;color: #fff;}
 #header .nav-item {padding: 0 0.5rem; text-align: right;}
 
-#header .navbar-light .navbar-nav .nav-link::before {content: " "; position: absolute; top: 47px; width: 0px; height: 3px; background-color: #6F6026; transition: .2s;}
-#header .navbar-light .navbar-nav .nav-link:hover::before {content: " "; position: absolute; top: 47px; width: 30px; height: 3px; background-color: #6F6026;}
-
-button.navbar-toggler {background-color: #fff; border-radius: 0;}
+#header .navbar-light .navbar-nav .nav-link::before {content: " "; position: absolute; top: 35px; width: 0px; height: 3px; background-color: #6F6026; transition: .2s;}
+#header .navbar-light .navbar-nav .nav-link:hover::before {content: " "; position: absolute; top: 35px; width: 30px; height: 3px; background-color: #6F6026;}
 
 /* banner principal */
-.bannerPrincipal {position: relative; max-height: 40rem; overflow: hidden;}
+.bannerPrincipal {position: relative; max-height: 45rem; overflow: hidden;}
 
 .bannerPrincipal-text-container {position: absolute; top: 35%;}
 .bannerPrincipal-text-title {color: #fff;}
 .bannerPrincipal-text-subtitle {letter-spacing: 1px; color: #fff;}
 
 /* section link */
-.section-link {min-height: 20rem; background-color: #F2D5B7;}
-.section-button h3 {display: inline-block;padding: 1rem 4rem;background-color: #BD6F26;color: #fff; border: 3px solid transparent;text-transform: uppercase;text-decoration: none;font-weight: 300;letter-spacing: 2px; transition: .3s;}
+.section-link {min-height: 18rem; background-color: #F2D5B7;}
+.section-button h3 {display: inline-block;padding: 1rem 4rem;background-color: #BD6F26;color: #fff; border: 2px solid #fff;text-transform: uppercase;text-decoration: none;font-weight: 300;letter-spacing: 2px; transition: .3s;}
 .section-button:hover h3 {background-color: #ffeede; color: #212529; border-color: #6F6026; transition: .3s;}
 
 .section-link--bg {position: absolute;top: 0;right: 0;max-height: 20rem;overflow: hidden;opacity: .25; z-index: -1;}
@@ -30,7 +28,7 @@ button.navbar-toggler {background-color: #fff; border-radius: 0;}
 /* section imgs */
 .section-imgs {height: 25rem;overflow: hidden;}
 .section-imgs--img {position: relative;}
-.section-imgs--text {width: 80%;position: absolute;text-align: center;height: 65%;margin: 10%;padding: 2rem;background-color: #ffffffd1;}
+.section-imgs--text {width: 100%;position: absolute; box-sizing: border-box; text-align: center;padding: 20% 0%;}
 .section-imgs--title {font-size: 1.5rem;}
 .section-imgs--img {max-height: 22rem;}
 
@@ -44,7 +42,12 @@ button.navbar-toggler {background-color: #fff; border-radius: 0;}
 
 /* media queries */
 @media screen and (max-width: 992px) {
-    #header .navbar ul {background: linear-gradient(180deg, rgb(0 0 0 / 80%) 0%, rgb(0 0 0 / 75%) 100%) !important;}    
+    #header .navbar ul {background-color: #000;}  
+    
+    #header .navbar-collapse {position: relative;}
+    .navbar-collapse ul::before {width: 0;height: 0;border: 1rem solid transparent;border-bottom-color: #000;content: "";position: absolute;right: 0.75rem;top: -2rem;}
+    button.navbar-toggler {background-color: #fff; border-radius: 0;}
+    #header .nav-item {font-size: 1.5rem;padding: 0.5rem 1rem;text-align: right;}
 }
 @media screen and (max-width: 768px) {
     .section-link {min-height: 12rem; padding: 2rem 0;}
