@@ -1,7 +1,8 @@
-* {font-family: "Nunito Sans", sans-serif;}
+body {display: flex;flex-direction: column;min-height: 100vh;font-family: "Nunito Sans", sans-serif;}
 
 /* header */
-#header {position: absolute; top: 0; left: 0; width: 100%;}
+#home #header {position: absolute; top: 0; left: 0; width: 100%;}
+#header {position: relative; background-color: #0A0708; width: 100%;}
 #header .navbar {background-color: rgb(0,0,0) !important; background: linear-gradient(180deg, rgb(0 0 0 / 80%) 0%, rgba(0,0,0,0) 100%) !important; z-index: 1;}
 #header .navbar-nav {width: 100%; justify-content: flex-end;}
 #header .navbar-brand img {height: 3rem;}
@@ -20,25 +21,35 @@
 
 /* section link */
 .section-link {min-height: 18rem; background-color: #F2D5B7;}
-.section-button h3 {display: inline-block;padding: 1rem 4rem;background-color: #BD6F26;color: #fff; border: 2px solid #fff;text-transform: uppercase;text-decoration: none;font-weight: 300;letter-spacing: 2px; transition: .3s;}
-.section-button:hover h3 {background-color: #ffeede; color: #212529; border-color: #6F6026; transition: .3s;}
+.section-button h3 , button.section-button {display: inline-block;padding: 1rem 4rem;background-color: #BD6F26;color: #fff; border: 2px solid #fff;text-transform: uppercase;text-decoration: none;font-weight: 300;letter-spacing: 2px; transition: .3s;}
+button.section-button {background-color: #6F6026;}
+.section-button:hover h3 , button.section-button:hover  {background-color: #ffeede; color: #212529; border-color: #6F6026; transition: .3s;}
 
 .section-link--bg {position: absolute;top: 0;right: 0;max-height: 20rem;overflow: hidden;opacity: .25; z-index: -1;}
 
 /* section imgs */
 .section-imgs {height: 25rem;overflow: hidden;}
+.section-imgs img {width: 100%;}
 .section-imgs--img {position: relative;}
 .section-imgs--text {width: 100%;position: absolute; box-sizing: border-box; text-align: center;padding: 20% 0%;}
 .section-imgs--title {font-size: 1.5rem;}
 .section-imgs--img {max-height: 22rem;}
 
 /* footer */
+footer {margin-top: auto;}
 .footer-inf {background-color: #0A0708; padding: 5rem 0; color: #fff;}
 .footer-inf img {max-width: 30%;}
 .footer-inf h4 {font-weight: 700; margin-bottom: 2rem;}
 .info-legal ul {list-style: circle;}
 .info-legal a{display: block; color: #fff; text-decoration: none; margin-bottom: .5rem;}
 .info-legal a:hover {color: #fff; text-decoration: underline;}
+
+/* contacto */
+.info-contacto {padding: 2rem;}
+.info-contacto h2 {margin-bottom: 2rem; text-align: center;}
+.info-contacto form {padding: 0 2rem;}
+.info-contacto .form-group {margin-bottom: 1rem;}
+
 
 /* media queries */
 @media screen and (max-width: 992px) {

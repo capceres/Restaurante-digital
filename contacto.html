@@ -4,11 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Contacto</title>
+    <link rel="icon" href="resources/img/favicon.png" sizes="16x16">
+    <title>Contacto - Casa Abril</title>
 </head>
 <body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="home.html">
+                  <img src="resources/img/logo_header.png" alt="Acceso a página principal">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="carta.html">carta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-8 mapa">
+                    <div style="width: 100%"><iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=es&amp;q=Gil%20Cordero%205,%20C%C3%A1ceres+(Casa%20Abril%20/%20Taper%C3%ADa-%20Restaurante)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">mapa</a></iframe></div>
+                </div>
+                <div class="col-12 col-md-4 info-contacto"> 
+                    <h2>Formulario de contacto</h2>                 
+                    <form>
+                    <div class="form-group">
+                        <label for="nombreForm">Tu nombre</label>
+                        <input type="email" class="form-control" id="nombreForm" aria-describedby="emailHelp" placeholder="Nombre">                        
+                    </div>
+                    <div class="form-group">
+                        <label for="mailForm">Tu email</label>
+                        <input type="name" class="form-control" id="mailForm" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensajeForm">Mensaje</label>
+                        <textarea type="text" class="form-control" id="mensajeForm" placeholder="Escribe aquí tus solicitudes de reserva, quejas o sugerencias." rows="3">
+                        </textarea>
+                        <small id="emailHelp" class="form-text text-muted">Tus datos son confidenciales, no los compartiremos con nadie.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary section-button">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-sup"></div>
+        <div class="footer-inf">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <a href="home.html" title="acceso a la portada">
+                  <img src="resources/img/logotipo_casaAbril.png" alt="Acceso a la home">
+                </a>            
+              </div>
+              <div class="col-12 col-md-4">
+                <h4>Horario</h4>
+                <p>De Martes a Domingo</p>
+                 <p>9:00 a 23:00</p>                
+                 <p>Lunes Cerrado</p>              
+              </div>
+              <div class="col-12 col-md-4 info-legal">
+                <h4>Información legal</h4>
+                <ul>
+                  <li><a href="#" title="acceso a la página">Política de cookies</a></li>
+                  <li><a href="#" title="acceso a la página">Más información sobre las cookies</a></li>
+                  <li><a href="#" title="acceso a la página">Política de Privacidad</a></li>
+                </ul>             
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </footer>
     
     <script src="js/bootstrap.min.js"></script>
 </body>
