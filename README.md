@@ -14,7 +14,7 @@ Incluye un planteamiento de identidad corporativa que ya se aplica en la maqueta
 ## Muestra
 ![a building](resources/img/casaAbril.png)
 
-[👉 Ir a la web](https://capceres.github.io/reto1/home.html)
+[👉 Ir a la web](https://capceres.github.io/Restaurante-digital/home.html)
 
 ## Herramientas
 * HTML5
